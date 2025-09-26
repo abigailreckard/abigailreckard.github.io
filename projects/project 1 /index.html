@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pennsylvania Hot Spots</title>
+
+  <!-- Oswald font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    .footer-logo {
+  background-image: url("logo.png");
+  background-size: contain;   /* scale image */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+}
+   
+.card {
+  display: flex;
+  align-items: stretch;
+  min-height: 350px; 
+}
+
+/* Image container */
+.card-image {
+  flex: 1;
+  overflow: hidden;  
+}
+
+/* Actual image inside */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
+
+  .card-image {
+  flex: 1;
+  height: 350px; /* force uniform height */
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  min-height: 320px;   
+}
+
+
+.card-image,
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+    :root{
+      --accent: rgb(219,103,69);        
+      --box:    rgb(255,229,221);  
+      --green:  #2c3e2c;                 
+      --ink:    #24302a;
+    }
+
+    /* Reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    img{max-width:100%;display:block}
+    body{
+      font-family:'Oswald',sans-serif;
+      color:var(--ink);
+      background:var(--accent);
+      line-height:1.6;
+    }
+
+    .container{max-width:1440px;margin:0 auto}
+
+    /* Header / Nav */
+    .navbar{
+      background:var(--green);
+      color:#fff;
+    }
+    .navbar .inner{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:16px 28px;
+    }
+    .nav-links{list-style:none;display:flex;gap:40px}
+    .nav-links a{
+      color:#fff;text-decoration:none;font-weight:700;letter-spacing:.5px;
+      font-size:20px;
+    }
+    .logo-text{color:#fff;font-weight:700;font-size:24px}
+
+    /* HERO */
+    .hero-wrap{position:relative}
+    .hero-image{
+      height:520px;                    
+      overflow:hidden;
+    }
+    .hero-image img{
+      width:100%;height:100%;object-fit:cover;
+    }
+
+    /* Big overlapping title */
+    .hero-title{
+      position:absolute;
+      left:50%;bottom:-34px;       
+      transform:translateX(-50%);
+      width:100%;
+      text-align:center;
+      color:#fff;
+      font-weight:700;
+      letter-spacing:2px;
+      font-size:clamp(40px,8vw,120px); 
+      text-shadow:0 3px 6px rgba(0,0,0,.25);
+      pointer-events:none;
+    }
+
+    /* Tagline bar under the image */
+    .tagline{
+      text-align:center;color:#fff;
+      padding:18px 16px 28px;
+      font-size:24px;
+    }
+
+    /* CARD LISTS */
+    .cards{
+      padding:48px 28px;
+      display:flex;flex-direction:column;gap:36px;
+    }
+    .card{
+      display:flex;align-items:stretch;justify-content:space-between;
+      background:var(--box);
+      box-shadow: 8px 8px 18px rgba(0,0,0,.22);  /* bottom-right drop shadow */
+    }
+    /* alternate left/right within each .cards group */
+    .cards > .card:nth-child(even){flex-direction:row-reverse;}
+
+    .card-image{
+      flex:1;min-height:260px;background:#cfcfcf;
+      display:flex;align-items:center;justify-content:center;
+      color:#444;font-size:22px;
+    }
+    .card-content{
+      position:relative;flex:1;padding:36px 36px 72px;
+      display:flex;flex-direction:column;gap:16px;
+    }
+    .card-content h2{font-size:44px;line-height:1.1;color:#243424}
+    .card-content p{font-size:22px;max-width:60ch}
+
+    /* Learn more bottom-right */
+    .learn-more{
+      position:absolute;right:28px;bottom:22px;
+      text-decoration:none;font-weight:700;
+      color:var(--green);font-size:26px;
+    }
+
+    /* INTERLUDE SECTION */
+    .interlude{
+      padding:42px 28px 14px;
+    }
+    .interlude h2{
+      color:#fff;font-size:52px;line-height:1.1;margin-bottom:18px;
+      text-shadow:0 3px 6px rgba(0,0,0,.2);
+    }
+    .interlude p{
+      color:#fff;font-size:22px;max-width:92ch;margin:0 auto 14px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:var(--green); color:#fff;
+      margin-top:48px;
+    }
+    .footer-inner{
+      display:grid;grid-template-columns:1fr auto 1fr;
+      align-items:center;gap:24px;
+      padding:28px;
+    }
+    .contact p{font-size:22px}
+    .footer-logo{
+      display:flex;justify-content:center;align-items:center;
+      gap:10px
+    }
+    .footer-logo .mark{
+      width:64px;height:64px;border-radius:12px;border:2px solid #fff;
+      display:flex;align-items:center;justify-content:center;font-weight:700
+    }
+    .social{
+      display:flex;justify-content:flex-end;gap:18px
+    }
+    .social a{display:inline-flex}
+    .social svg{width:34px;height:34px;fill:#fff;opacity:.95;transition:opacity .2s}
+    .social a:hover svg{opacity:1}
+
+    .copyright{
+      text-align:center;padding:10px 18px 24px;font-size:22px;opacity:.95
+    }
+
+   
+    @media (max-width:900px){
+      .cards > .card,
+      .cards > .card:nth-child(even){flex-direction:column}
+      .card-image{min-height:220px}
+      .card-content h2{font-size:36px}
+      .hero-image{height:420px}
+      .hero-title{font-size:clamp(36px,10vw,80px)}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="inner container">
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Book</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Explore</a></li>
+      </ul>
+    <img src="logo.png" alt="Logo" width="60" height="auto"> 
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero-wrap">
+    <div class="hero-image">
+      <!-- Replace with your fall hero photo -->
+      <img src="falltrees.jpg" alt="Pennsylvania fall road">
+    </div>
+    <h1 class="hero-title">PENNSYLVANIA HOT SPOTS</h1>
+  </div>
+  <div class="tagline container">
+    These are some of the most visited and top rated tourist attractions in Pennsylvania
+  </div>
+
+  <!-- FIRST THREE LOCATIONS -->
+  <section class="cards container">
+    <div class="card">
+      <div class="card-image"><img src="hersheypark.jpg" alt="hersheypark"></div>
+      <div class="card-content">
+        <h2>Hershey Park</h2>
+        <p>A renowned amusement park featuring exciting rides, live entertainment, and chocolate-making fun.</p>
+        <a class="learn-more" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image"> <img src="Harrisburg.JPG" alt="Harrisburg"></div>
+    
+      <div class="card-content">
+        <h2>Pennsylvania State Capitol</h2>
+        <p>An architectural gem showcasing artwork, stunning interiors, and government history.</p>
+        <a class="learn-more" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image"><img src="pinegrove.jpg" alt="pinegrove"></div>
+      <div class="card-content">
+        <h2>Pine Grove Furnace State Park</h2>
+        <p>Historic park with hiking, picnicking, and swimming opportunities.</p>
+        <a class="learn-more" href="#">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERLUDE / BREAK SECTION -->
+  <section class="interlude container">
+    <h2>Discover Pennsylvania: History, Nature, and Adventure</h2>
+    <p>Pennsylvania is a state where every traveler can find something to love, whether it’s the bustle of a historic city or the quiet charm of a mountain town. Philadelphia’s cobblestone streets echo with revolutionary history, while Pittsburgh’s steel-town heritage has transformed into a hub of art, innovation, and culture. Beyond the cities, small towns like Jim Thorpe and Lititz capture the spirit of Pennsylvania with welcoming main streets, unique shops, and timeless traditions. Each corner of the state offers a story to discover, making it an ideal destination for both first-time visitors and seasoned explorers.</p>
+    <p>Nature lovers will find endless opportunities to explore Pennsylvania’s great outdoors. From the rolling Appalachian Mountains to the deep forests of the Allegheny National Forest, the state is full of scenic trails, waterfalls, and wildlife. Visitors can paddle along the Susquehanna River, hike to overlooks in the Poconos, or camp under starry skies at one of more than 120 state parks. No matter the season, Pennsylvania invites travelers to slow down, take in the views, and connect with the natural beauty that has inspired generations.</p>
+  </section>
+
+  <!-- REMAINING LOCATIONS -->
+  <section class="cards container">
+    <div class="card">
+      <div class="card-image">
+        <img src="gettysburgbattlefield.jpg" alt="Gettysburg National Military Park">
+      </div>
+      <div class="card-content">
+        <h2>Gettysburg National Military Park</h2>
+        <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.</p>
+        <a class="learn-more" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="lewisburg.jpg" alt="Lewisburg">
+      </div>
+      <div class="card-content">
+        <h2>Lewisburg</h2>
+        <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
+        <a class="learn-more" href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="raystownlake.jpg" alt="Raystown Lake">
+      </div>
+      <div class="card-content">
+        <h2>Raystown Lake</h2>
+        <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
+        <a class="learn-more" href="#">Learn More →</a>
+      </div>
+    </div>
+ 
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner container">
+      <div class="contact">
+        <p>CONTACT INFORMATION</p>
+        <p>717-398-6765</p>
+        <p><a href="mailto:abigailr1211@gmail.com" style="color:#fff;text-decoration:none">abigailreckard@pahotspots.com</a></p>
+      </div>
+
+      
+       
+        <div class="footer-logo">
+  <img src="logo.png" alt="Hotspotter Logo">
+</div>
+
+     
+      <div class="social">
+     
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" role="img"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.3a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.3z"/></svg>
+        </a>
+    
+        <a href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" role="img"><path d="M18.5 7.6a6.4 6.4 0 0 1-3.7-1.2v7.5A5.9 5.9 0 1 1 9 8.1v2.4A3.5 3.5 0 1 0 12.8 14V2h2a4.4 4.4 0 0 0 3.7 3.7z"/></svg>
+        </a>
+       
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" role="img"><path d="M13.5 22v-8h2.2l.3-3h-2.5V9.3c0-.9.3-1.5 1.6-1.5h1V5.1c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.2v8z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="copyright container">© 2006-2025 Pennsylvania Tourism + Conventions. All rights reserved.</div>
+  </footer>
+</body>
+</html>
