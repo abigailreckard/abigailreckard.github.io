@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chocolate Chip Protein Blondies</title> 
+<meta name="description" content="Overview for protein chocolate chip blondies."> 
+
+<style>
+
+
+:root{ --header:    #F5EEE6;   
+     --head-text: #27160F;  
+      --page:      #2B140C; 
+       --side:      #180A06;   
+        --text:      #FFF7EE;   
+        --muted:     #E1D4C6;   
+        --border:    #3A1C11;  }
+
+
+
+
+*{ box-sizing:border-box; }
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+background: var(--page);
+color: var(--text);
+line-height: 1.5;}
+
+
+a.skip{ position:absolute; left:-9999px; top:auto; }
+a.skip:focus{ left:8px; top:8px; background:#fff; color:#000; padding:6px 10px; }
+
+
+header{
+position: sticky; top:0; z-index: 5;
+background: var(--header);
+color: var(--head-text);
+border-bottom: 1px solid var(--border);}
+
+header .row{
+max-width: 960px;
+margin: 0 auto;
+padding: 10px 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;}
+
+header .brand{ font-size: 18px; font-weight: 600; }
+header nav a{
+color: var(--head-text);
+text-decoration: none;
+margin-left: 12px;
+font-weight: 600;
+}
+
+
+.wrapper{ max-width: 960px; margin: 0 auto; }
+main{ padding: 10px 12px; }
+
+
+aside{
+width: 200px;
+float: left;
+background: var(--side);
+border: 1px solid var(--border);
+position: sticky;
+top: 58px;}
+
+aside h2{
+margin: 0; padding: 10px 12px;
+font-size: 14px;
+color: var(--muted);
+border-bottom: 1px solid var(--border);
+}
+
+aside ul{ list-style: none; margin: 0; padding: 0; }
+aside a{
+  display: block;
+  padding: 10px 12px;
+  color: var(--text);
+  text-decoration: none;
+  border-top: 1px solid var(--border);
+}
+aside a:hover{
+  background: var(--header);    
+  color: var(--head-text);
+}
+aside a[aria-current="page"]{
+  background: #3A1C11;
+  font-weight: bold;
+}
+
+
+article{
+  margin-left: 212px;
+  border: 1px solid var(--border);
+  padding: 12px;
+  background: #2E150D; 
+}
+
+
+.two-col::after{ content:""; display:block; clear:both; }
+.media{
+  float: left;           
+  width: 48%;
+  height: 260px;         
+  border: 1px solid var(--border);
+  background: #000;    
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.media img{
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+.info{
+  float: right;
+  width: 48%;
+}
+.info h2{ margin-top: 0; font-size: 18px; }
+
+
+.btns{ margin-top: 8px; }
+.btns a{
+  display:inline-block;
+  padding:6px 10px;
+  background: var(--header);
+  color: var(--head-text);
+  text-decoration:none;
+  border: 1px solid var(--border);
+  margin-right: 6px;}
+
+
+.spacer{ height: 40vh; }
+
+footer{
+  max-width: 960px;
+  margin: 10px auto;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;}
+
+
+@media (max-width: 720px){
+  aside{ float:none; width:auto; position: static; margin-bottom: 10px; }
+  article{ margin-left: 0; }
+  .media, .info{ float:none; width:auto; }
+  .media{ height: 220px; }
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="row">
+    <div class="brand">Crumbly Corner</div>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="ingredients.html">Recipe</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrapper">
+  <main id="main">
+
+    <aside aria-label="Steps">
+      <h2>Steps</h2>
+      <ul>
+      
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="step-1.html">Step 1</a></li>
+        <li><a href="step-2.html">Step 2</a></li>
+        <li><a href="step-3.html">Step 3</a></li>
+        <li><a href="step-4.html">Step 4</a></li>
+        <li><a href="step-5.html">Step 5</a></li>
+      </ul>
+    </aside>
+
+   
+    <article>
+     
+      <section class="two-col">
+        <div class="media">
+       
+          <img src="Project 2_Pictures/images:step3.jpg" alt="Step 3">
+        </div>
+
+        <div class="info">
+        
+          <h2>Step 3</h2>
+          <p>Mix Wet Ingredients: 
+
+In another bowl, combine peanut butter, maple syrup, almond milk, Greek yogurt, and vanilla until smooth.</p>
+          <div class="btns">
+            <a href="ingredients.html">Back To Ingredients</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <p>© 2025 Abigail Reckard — Instructional Site </p>
+</footer>
+
+</body>
+</html>
