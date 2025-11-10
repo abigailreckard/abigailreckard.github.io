@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brew & Bonds</title>
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#e9dec5; /* richer creamy latte tone */
+  color:#2a1a0f;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+.side{
+  position:fixed;
+  inset:0 auto 0 0;
+  width:72px;
+  background:#36624F; /* consistent green */
+}
+
+.side-nav{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  padding:12px 0;
+}
+
+.side-nav a{
+  display:block;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  line-height:1;
+  text-decoration:none;
+  color:#FFEBC5;
+  font-weight:600;
+  letter-spacing:.5px;
+}
+
+.side-nav a:hover{opacity:.85;}
+.page{margin-left:72px; flex:1;}
+
+.hero{
+  padding:100px 40px 60px;
+  background-image: url("pictures/coffeecup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white;
+  position:relative;
+}
+
+.hero h1{
+  font-size:3.8rem;
+  margin-bottom:10px;
+  color:#f4e2c1;
+  position:relative;
+  text-shadow:
+    0 2px 3px rgba(50,25,10,0.65),
+    0 5px 10px rgba(30,15,5,0.6),
+    0 0 10px rgba(70,35,15,0.4); 
+}
+
+
+.hero h1::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at center,
+ rgba(60,30,10,0.4) 0%,
+  rgba(0,0,0,0) 70%);
+  mix-blend-mode:multiply;
+  pointer-events:none;
+}
+
+.hero p{
+  max-width:600px;
+  font-size:1rem;
+  color:#f2e0c0;
+}
+
+.hero button{
+  background:#FFEBC5;
+  border:none;
+  padding:10px 20px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:20px;
+  color:#2b1c11;
+}
+
+.hero button:hover{opacity:.8;}
+
+.founders{
+  background:#ede2c8;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:60px 40px;
+}
+
+.founders-text{
+  flex:1 1 400px;
+  max-width:380px; 
+  line-height:1.6; 
+  margin-left:60px;
+}
+
+.founders h2{
+  color:#4d2e18;
+  font-size:2rem;
+}
+
+.founder-photo {
+  width:400px;
+  height:auto;
+  border-radius:10px;
+  margin-right:60px;
+}
+
+@media (max-width:768px){
+  .side{position:static;width:100%;height:auto;}
+  .side-nav{
+    flex-direction:row;
+    writing-mode:initial;
+    justify-content:center;
+    gap:16px;
+  }
+  .page{margin-left:0;}
+  .founders{flex-direction:column;text-align:center;}
+}
+
+.footer{
+  background:#36624F;
+  color:#F5EEDC;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  padding:30px 40px;
+  font-size:14px;
+  margin-left:72px;
+  width:calc(100% - 72px);
+  box-sizing:border-box;
+}
+
+.footer-section{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.footer-icons{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.footer-icons img{
+  width:26px;
+  height:26px;
+}
+
+.footer-center p{
+  margin:0;
+}
+
+@media (max-width:768px){
+  .footer{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-left:0;
+    width:100%;
+  }
+  .footer-section{
+    flex-direction:column;
+    gap:6px;
+  }
+}
+</style>
+</head>
+<body>
+
+<aside class="side">
+  <nav class="side-nav">
+    <a href="contact.html">Contact</a>
+    <a href="locations.html">Locations</a>
+    <a href="events.html">Events</a>
+    <a href="menu.html">Menu</a>
+  </nav>
+</aside>
+
+<div class="page">
+  <section class="hero">
+    <a href="index.html">
+    <img src="icons/LOGOCREAM.png" alt="Brews & Bonds logo" style="position:absolute;top:20px;right:20px;width:140px;">
+   </a>
+    <h1>Best Coffee In PA</h1>
+    <p>Brew & Bonds is a cafe dedicated to serving delicious food and beverages in a cozy, friendly environment.</p>
+    <button>Order Online</button>
+  </section>
+
+  <section class="founders" id="founders">
+    <div class="founders-text">
+      <h2>Meet our Founders</h2>
+      <p>Jacob and Emily first met in a small San Francisco café, where a shared love for coffee sparked both conversation and connection. From exploring the city’s coffee culture to dreaming about creating a place of their own, they were inspired by the way a single cup could bring people together.</p>
+      <p>Years later, their journey led them to Harrisburg, Pennsylvania, where they turned that dream into Brews & Bonds. Blending West Coast inspiration with local charm, their shop quickly became a cozy hub for connection and community. Today, every cup they brew celebrates their story — a blend of love, passion, and the belief that coffee is best enjoyed when it brings people closer together.</p>
+    </div>
+    <img src="pictures/owners.jpg" alt="founders" class="founder-photo">
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="footer-section">
+    <p><strong>Socials:</strong></p>
+    <div class="footer-icons">
+      <img src="icons/instagram (1).png" alt="Instagram icon">
+      <img src="icons/facebook.png" alt="Facebook icon">
+    </div>
+  </div>
+
+  <div class="footer-section footer-center">
+    <p><strong>Hours:</strong> Mon 7am–6pm | Tue–Fri 7am–8pm | Weekends 7:30am–6pm</p>
+  </div>
+
+  <div class="footer-section footer-right">
+    <p><strong>Brew & Bonds</strong></p>
+  </div>
+</footer>
+
+</body>
+</html>
+
