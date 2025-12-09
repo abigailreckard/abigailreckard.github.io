@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aurora Art Museum – About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="header-inner page-wrap">
+    <a href="index.html" class="logo">
+      <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+    </a>
+
+    <p class="open-today">OPEN TODAY: 10:00 AM – 6:00 PM</p>
+
+    <nav class="main-nav">
+      <a href="exhibitions.html">EXHIBITIONS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="visit.html">VISIT</a>
+      <a href="artists-events.html">ARTISTS &amp; EVENTS</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main>
+
+
+    
+<section class="about-hero">
+  <div class="about-hero-inner page-wrap">
+    <div class="about-card">
+      <h2>OUR MISSION</h2>
+      <p>
+        We believe in the power of immersive, inclusive art experiences that spark curiosity
+        and conversation. The Aurora Art Museum is dedicated to presenting innovative work
+        from diverse voices and creating spaces of belonging.
+      </p>
+
+      <h2>OUR COMMUNITY</h2>
+      <p>
+        The museum is more than a gallery; it’s a gathering place where neighbors, students,
+        and visitors come together. Through exhibitions, programs, and partnerships, we work
+        to inspire creativity and connection.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="support">
+  <div class="support-inner page-wrap">
+    <div class="support-text">
+      <h2 class="section-title">SUPPORT US</h2>
+      <p>Your generosity helps us grow.</p>
+
+      <h3>Ways to give:</h3>
+      <ul>
+        <li><strong>Annual Fund:</strong> Directly supports exhibitions and programs</li>
+        <li><strong>Corporate Sponsorships:</strong> Partner with us for community impact</li>
+        <li><strong>Planned Giving:</strong> Leave a lasting legacy</li>
+        <li><strong>Volunteer:</strong> Share your time and skills to bring art to the public</li>
+      </ul>
+    </div>
+
+    <div class="support-image">
+      <img src="pictures/artwork6.png" alt="Visitor at light installation">
+    </div>
+  </div>
+</section>
+
+
+<section class="contact">
+  <div class="contact-inner page-wrap">
+    <h2 class="section-title">CONTACT US</h2>
+
+    <form class="contact-form">
+      <label>Email Address</label>
+      <input type="email">
+
+      <label>About</label>
+      <textarea rows="6" placeholder="Type Here."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner page-wrap">
+    <div class="footer-logo">
+      <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+    </div>
+
+    <div class="footer-block">
+      <h3>MUSEUM HOURS</h3>
+      <p>
+        Tuesday – Friday: 10am – 6pm<br>
+        Saturday: 10am – 8pm<br>
+        Sunday: 12pm – 5pm<br>
+        Closed Mondays & Major Holidays
+      </p>
+    </div>
+
+    <div class="footer-block">
+      <h3>MAIN BUILDING</h3>
+      <p>
+        Aurora Art Museum<br>
+        123 Main Street<br>
+        Harrisburg, PA 17110
+      </p>
+    </div>
+
+    <div class="footer-block">
+      <h3>FOLLOW US</h3>
+      <div class="social-icons">
+        <img src="pictures/tiktokblue.png" alt="TikTok">
+        <img src="pictures/facebookblue.png" alt="Facebook">
+        <img src="pictures/instagramblue.png" alt="Instagram">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => nav.classList.toggle('nav-open'));
+</script>
+
+</body>
+</html>
+

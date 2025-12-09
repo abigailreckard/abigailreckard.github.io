@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aurora Art Museum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner page-wrap">
+      <a href="index.html" class="logo">
+
+        
+        <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+      </a>
+
+      <p class="open-today">OPEN TODAY: 10:00 AM – 6:00 PM</p>
+
+      <nav class="main-nav">
+      
+        <a href="exhibitions.html">EXHIBITIONS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="visit.html">VISIT</a>
+        <a href="artists-events.html">ARTISTS &amp; EVENTS</a>
+      </nav>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner page-wrap">
+        <div class="hero-text">
+          <h1>PLAN<br>YOUR<br>VISIT</h1>
+          <a href="visit.html" class="hero-cta">HERE</a>
+        </div>
+
+        <article class="hero-card">
+          <h2>AURORA ART<br><span>MUSEUM</span></h2>
+          <p>
+            Welcome to the Aurora Art Museum, a contemporary cultural hub dedicated
+            to celebrating creativity, fostering dialogue, and connecting communities
+            through the power of art. Founded in 1998, the museum has grown into
+            one of the region’s most dynamic art spaces, offering a balance of local
+            innovation and global perspectives.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="whats-on">
+      <div class="page-wrap">
+        <h2 class="section-title">WHATS ON VIEW</h2>
+
+        <div class="exhibition-grid">
+          <article class="exhibit-card">
+            <img src="pictures/artwork1.png" alt="Gallery painting">
+            <h3>Atmospheres of the Natural World</h3>
+            <p>
+              This exhibition explores how artists capture mood, depth, and environment through layered landscapes and changing light.
+            </p>
+          </article>
+
+          <article class="exhibit-card">
+            <img src="pictures/artwork2.png" alt="People viewing artwork">
+            <h3>The Human Presence</h3>
+            <p>
+              Centered on portraiture and the figure, these works investigate identity, observation, and connection.
+            </p>
+          </article>
+
+          <article class="exhibit-card">
+            <img src="pictures/artwork3.png" alt="Museum installation">
+            <h3>Moments in Motion</h3>
+            <p>
+              Focused on movement and dramatic composition, this collection highlights artworks that freeze energy, tension, and action.
+            </p>
+          </article>
+
+          <article class="exhibit-card">
+            <img src="pictures/artwork4.png" alt="Large wall mural">
+            <h3>Stories of the City</h3>
+            <p>
+          
+             Inspired by urban life and shared experiences, these pieces blend narrative, bold imagery, and cultural references.
+            </p>
+          </article>
+        </div>
+
+        <a class="see-all" href="exhibitions.html">
+          SEE ALL EXHIBITIONS →
+        </a>
+      </div>
+    </section>
+
+    
+    <section class="upcoming">
+      <div class="upcoming-inner page-wrap">
+        <div class="events-text">
+          <h2 class="section-title">UPCOMING EVENTS</h2>
+
+          <h3>First Fridays</h3>
+          <p>Late-night gallery hours, live performances, and food trucks.</p>
+
+          <h3>Artist Talks</h3>
+          <p>Meet the creators behind the work, every second Saturday.</p>
+
+          <h3>Family Sundays</h3>
+          <p>Interactive workshops designed for children and parents alike.</p>
+
+          <h3>Film Nights</h3>
+          <p>Screenings of art documentaries and experimental films.</p>
+
+          <a class="more-info" href="artists-events.html">MORE INFO →</a>
+        </div>
+
+        <div class="events-image">
+          <img src="pictures/artwork5.png"
+               alt="Hanging installation with spheres in the museum">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="footer-inner page-wrap">
+      <div class="footer-logo">
+        <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+      </div>
+
+      <div class="footer-block">
+        <h3>MUSEUM HOURS</h3>
+        <p>
+          Tuesday – Friday: 10am – 6pm<br>
+          Saturday: 10am – 8pm<br>
+          Sunday: 12pm – 5pm<br>
+          Closed Mondays &amp; Major Holidays
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>MAIN BUILDING</h3>
+        <p>
+          Aurora Art Museum<br>
+          123 Main Street<br>
+          Harrisburg, PA 17110
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+          
+
+          <img src="pictures/tiktokblue.png" alt="TikTok">
+          <img src="pictures/facebookblue.png" alt="Facebook">
+          <img src="pictures/instagramblue.png" alt="Instagram">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aurora Art Museum – Exhibitions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner page-wrap">
+    <a href="index.html" class="logo">
+      <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+    </a>
+
+    <p class="open-today">OPEN TODAY: 10:00 AM – 6:00 PM</p>
+
+    <nav class="main-nav">
+      <a href="exhibitions.html">EXHIBITIONS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="visit.html">VISIT</a>
+      <a href="artists-events.html">ARTISTS & EVENTS</a>
+    </nav>
+
+    <button class="nav-toggle">☰</button>
+  </div>
+</header>
+
+<main>
+
+
+ <main>
+
+
+  <section class="exhibitions-hero">
+    <div class="page-wrap exhibitions-hero-inner">
+      <article class="ex-hero-card">
+        <h1>WHAT WE<br>SHOWCASE</h1>
+        <p>
+          From groundbreaking contemporary installations to timeless works on canvas,
+          the Aurora Art Museum curates exhibitions that highlight both established and
+          emerging artists. With rotating exhibits, interactive installations, and a
+          permanent collection featuring over 2,000 pieces, every visit offers something
+          new to explore.
+        </p>
+      </article>
+
+      <article class="ex-hero-card ex-hero-card--right">
+        <h1>A PLACE TO<br>EXPLORE</h1>
+        <p>
+          Located in the heart of downtown, the museum’s light-filled galleries,
+          sculpture garden, and café offer visitors a welcoming environment to slow
+          down, reflect, and engage. Our goal is not only to exhibit art but to create
+          meaningful experiences that stay with you long after you leave.
+        </p>
+      </article>
+    </div>
+  </section>
+
+ 
+
+
+
+  <section class="exhibitions-section page-wrap">
+    <h2 class="section-title centered">CURRENT EXHIBITIONS</h2>
+
+    <div class="exhibition-grid two">
+      <article class="exhibit-card">
+        <img src="pictures/artwork7.png" alt="">
+        <div class="exhibit-info">
+          <h3>Atmospheres of Nature</h3>
+          <p>Paintings and works on paper that explore landscape, mood, and place, focusing on how artists translate the natural world into emotional and immersive environments.</p>
+        </div>
+      </article>
+
+      <article class="exhibit-card">
+        <img src="pictures/artwork8.png" alt="">
+        <div class="exhibit-info">
+          <h3>Portraits & Presence</h3>
+          <p>This exhibition centers on the human figure, examining observation, identity, and personal connection through large-scale portraiture and contemporary figurative work.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+
+
+  <section class="exhibitions-section page-wrap">
+    <h2 class="section-title centered">UPCOMING EXHIBITIONS</h2>
+
+    <div class="exhibition-grid two">
+      <article class="exhibit-card">
+        <img src="pictures/artwork9.png" alt="">
+        <div class="exhibit-info">
+          <h3>Drama in Motion</h3>
+          <p>Dynamic scenes and expressive compositions capture moments of tension, movement, and storytelling, highlighting the power of gesture and contrast.</p>
+        </div>
+
+      </article>
+
+      <article class="exhibit-card">
+        <img src="pictures/artwork10.png" alt="">
+        <div class="exhibit-info">
+          <h3>Narratives of the City</h3>
+          <p>Inspired by daily life and shared experiences, these artworks blend culture, history, and visual storytelling to reflect the rhythm of modern urban spaces.</p>
+        </div>
+      </article>
+    </div>
+
+  </section>
+
+  <section class="exhibitions-section page-wrap">
+    <h2 class="section-title centered">PAST HIGHLIGHTS</h2>
+
+    <div class="exhibition-grid two">
+      <article class="exhibit-card">
+        <img src="pictures/artwork11.png" alt="">
+        <div class="exhibit-info">
+          <h3>Illuminated Forms</h3>
+          <p>Artists experiment with material, scale, and spatial design to create immersive works that shift perception and invite viewers to engage with light, form, and space.</p>
+        </div>
+
+      </article>
+
+      <article class="exhibit-card">
+        <img src="pictures/artwork12.png" alt="">
+        <div class="exhibit-info">
+          <h3>Local Visions</h3>
+          <p>Featuring work by regional artists, this exhibition celebrates creative voices shaping the local art scene through painting, sculpture, photography, and mixed media.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+ <footer class="site-footer">
+    <div class="footer-inner page-wrap">
+      <div class="footer-logo">
+        <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+      </div>
+
+      <div class="footer-block">
+        <h3>MUSEUM HOURS</h3>
+        <p>
+          Tuesday – Friday: 10am – 6pm<br>
+          Saturday: 10am – 8pm<br>
+          Sunday: 12pm – 5pm<br>
+          Closed Mondays &amp; Major Holidays
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>MAIN BUILDING</h3>
+        <p>
+          Aurora Art Museum<br>
+          123 Main Street<br>
+          Harrisburg, PA 17110
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+          <img src="pictures/tiktokblue.png" alt="TikTok">
+          <img src="pictures/facebookblue.png" alt="Facebook">
+          <img src="pictures/instagramblue.png" alt="Instagram">
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => nav.classList.toggle('nav-open'));
+</script>
+
+</body>
+</html>
+

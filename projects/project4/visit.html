@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aurora Art Museum – Visit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <header class="site-header">
+    <div class="header-inner page-wrap">
+      <a href="index.html" class="logo">
+        <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+      </a>
+
+      <p class="open-today">OPEN TODAY: 10:00 AM – 6:00 PM</p>
+
+      <nav class="main-nav">
+        <a href="exhibitions.html">EXHIBITIONS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="visit.html">VISIT</a>
+        <a href="artists-events.html">ARTISTS &amp; EVENTS</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+  
+    <section class="visit-hero-image">
+   
+
+      <img src="pictures/visitartwork.png" alt="Gallery hallway with framed artwork">
+    </section>
+
+
+    <section class="tickets">
+      <div class="tickets-inner page-wrap">
+        <div class="tickets-content">
+          <h1 class="tickets-title">TICKETS</h1>
+
+          <h2 class="tickets-subtitle">Admission</h2>
+
+          <ul class="tickets-list">
+            <li>Adults: $12</li>
+            <li>Students &amp; Seniors: $8</li>
+            <li>Children under 12: Free</li>
+            <li>Members: Free</li>
+          </ul>
+
+          <a href="#" class="btn-primary">PAY NOW</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="visit-details">
+      <div class="visit-inner page-wrap">
+        <div class="visit-photo">
+         
+          <img src="pictures/visitartwork2.png" alt="Museum gallery with paintings">
+        </div>
+
+   
+        <div class="visit-info events-text">
+          <h2 class="section-title">HOURS</h2>
+          <p>
+            Tuesday – Friday: 10am – 6pm<br>
+            Saturday: 10am – 8pm<br>
+            Sunday: 12pm – 5pm<br>
+            Closed Mondays &amp; Major Holidays
+          </p>
+
+          <h2 class="section-title visit-subheading">LOCATION</h2>
+          <p>
+            Aurora Art Museum<br>
+            123 Main Street<br>
+            Harrisburg, PA 17110
+          </p>
+
+          <h2 class="section-title visit-subheading">AMENITIES</h2>
+          <ul class="amenities-list">
+            <li>Café &amp; Sculpture Garden</li>
+            <li>Gift Shop featuring local artists</li>
+            <li>Accessible facilities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner page-wrap">
+      <div class="footer-logo">
+        <img src="pictures/logo.png" alt="Aurora Art Museum logo">
+      </div>
+
+      <div class="footer-block">
+        <h3>MUSEUM HOURS</h3>
+        <p>
+          Tuesday – Friday: 10am – 6pm<br>
+          Saturday: 10am – 8pm<br>
+          Sunday: 12pm – 5pm<br>
+          Closed Mondays &amp; Major Holidays
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>MAIN BUILDING</h3>
+        <p>
+          Aurora Art Museum<br>
+          123 Main Street<br>
+          Harrisburg, PA 17110
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+          <img src="pictures/tiktokblue.png" alt="TikTok">
+          <img src="pictures/facebookblue.png" alt="Facebook">
+          <img src="pictures/instagramblue.png" alt="Instagram">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+
+</body>
+</html>
